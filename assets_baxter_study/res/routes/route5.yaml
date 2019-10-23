@@ -1,0 +1,24 @@
+init_dir: [0,1]
+final_dir: [1,0]
+destination_name: "Jackson Room"
+starting_description: "Let us start with you facing me here at the lobby."
+route:
+    - x : 0
+      y : 0
+      #turn right
+    - x: 15
+      y: 0
+      cue: "until you reach the noisy cafeteria."
+      # turn left
+    - x: 15
+      y: 20
+      # turn left
+    - x: -30
+      y: 20
+      # turn right
+      cue: " until you reach the end of the hallway."
+    - x: -30
+      y: 35
+      # turn right
+#final RLLRR
+#[ 15.  20.  45.  15.] 

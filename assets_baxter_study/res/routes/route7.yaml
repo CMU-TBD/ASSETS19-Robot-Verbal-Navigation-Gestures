@@ -1,0 +1,24 @@
+init_dir: [0,1]
+final_dir: [1,0]
+destination_name: "Jefferson Room"
+starting_description: "Let us start with you facing me here at the lobby."
+route:
+    - x : 0
+      y : 0
+      #turn left
+    - x: -15
+      y: 0
+      cue: "until you reach the water fountain which will be at your right."
+      # turn right
+    - x: -15
+      y: 45
+      # turn right
+    - x: 0
+      y: 45
+      cue: "until the end of the hallway."
+      # turn right
+    - x: 0
+      y: 25
+      # turn left
+#final LRRRL
+#[ 15.  45.  15.  20.]

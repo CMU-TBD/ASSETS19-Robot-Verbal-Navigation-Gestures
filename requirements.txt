@@ -1,0 +1,3 @@
+-e git+https://github.com/CMU-TBD/alloy.git@3ae936f267841e8a1ac8225c5f3e38e131989f3f#egg=alloylib
+numpy==1.16.5
+PyYAML==5.1.2

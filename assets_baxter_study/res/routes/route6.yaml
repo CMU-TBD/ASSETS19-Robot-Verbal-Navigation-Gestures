@@ -1,0 +1,24 @@
+init_dir: [0,1]
+final_dir: [-1,0]
+destination_name: "Wilson Room"
+starting_description: "Let us start with you facing me here at the lobby."
+route:
+    - x : 0
+      y : 0
+      #turn left
+      cue: "until the hallway narrows."
+    - x: -50
+      y: 0
+      # turn right
+    - x: -50
+      y: 15
+      # turn left
+    - x: -60
+      y: 15
+      cue: "until you feel the carpet changes to tiles."
+      # turn right
+    - x: -60
+      y: 35
+      # turn left
+#final LRLRL
+#[ 50.  15.  10.  20.]

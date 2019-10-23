@@ -1,0 +1,27 @@
+
+<launch>
+
+    <arg name="mode" />
+    <arg name="side" default="left"/>
+    <arg name='id'/>
+    <!-- <include file="$(find assets_baxter_study)/launch/base.launch" /> -->
+
+    <node pkg="assets_baxter_study" name="study_node" type="run.py" output="screen">
+        <!-- <remap from="success_polly_speech/sound_play" to="/sound_play"/> -->
+        <remap from="playAudio" to="success_polly_speech/playAudio"/>
+        <!-- <remap from="success_polly_speech/playAudio" to="playAudio"/> -->
+        <remap from="robotsound" to="success_polly_speech/robotsound"/>
+        <param name="mode" value="$(arg mode)" />
+        <param name="side" value="$(arg side)" />
+        <param name='participant_id' value="$(arg id)" type="string" />
+    </node>
+
+     <arg name="bag_path" default="/home/zhi/ASSETS19"/>
+    <!-- <node pkg="rosbag" type="record" name="rosbag_status_record"
+    args="-split -size=2048 -o $(arg bag_path)/$(arg id)_assets19.bag /rosout /success_polly_speech/speak/goal /joy
+    /baxter_force_sensor_left /success_polly_speech/playAudio/goal /tf /tf_static /rosout_agg /diagnostics /robot/limb/left/joint_command
+    /robot/joint_states /robot/limb/left/endpoint_state"
+    /> -->
+
+</launch>  
+  

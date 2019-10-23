@@ -1,0 +1,24 @@
+init_dir: [0,1]
+final_dir: [-1,0]
+destination_name: "Adams Room"
+starting_description: "Let us start with you facing me here at the lobby."
+route:
+    - x : 0
+      y : 0
+      #turn right
+    - x: 25
+      y: 0
+      # turn right
+      cue: "until you reach the second opening to your left."
+    - x: 25
+      y: -15
+      # turn left
+    - x: 35
+      y: -15
+      # turn left
+      cue: "until you hear the ice machine on your right."
+    - x: 35
+      y: 30
+      # turn left
+#[ 25.  15.  10.  45.]
+#RRLLL

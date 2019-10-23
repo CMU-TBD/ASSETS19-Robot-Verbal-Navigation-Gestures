@@ -1,0 +1,24 @@
+init_dir: [0,1]
+final_dir: [1,0]
+destination_name: "Hamilton Room"
+starting_description: "Let us start with you facing me here at the lobby."
+route:
+    - x : 0
+      y : 0
+      #turn right
+    - x: 10
+      y: 0
+      # turn right
+    - x: 10
+      y: -20
+      # turn left
+      cue: "until you feel the carpet changes to wooden floor."
+    - x: 20
+      y: -20
+      # turn right
+      cue: "until you reach the coffee shop."
+    - x: 20
+      y: -75
+      # turn left
+#RRLRL
+#[ 10.  20.  10.  55.] 

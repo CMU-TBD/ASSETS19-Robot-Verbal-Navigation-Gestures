@@ -1,0 +1,24 @@
+init_dir: [0,1]
+final_dir: [1,0]
+destination_name: "Washington Room"
+starting_description: "Let us start with you facing me here at the lobby."
+route:
+    - x : 0
+      y : 0
+      #turn right
+    - x: 15
+      y: 0
+      # turn left
+    - x: 15
+      y: 45
+      cue: "until the end of the hallway."
+      # turn right
+    - x: 35
+      y: 45
+      # turn left
+      cue: "until you reach the water fountain which will be at your left"
+    - x: 35
+      y: 60
+      # turn right
+#final RLRLR
+#[ 15.  45.  20.  15.]
